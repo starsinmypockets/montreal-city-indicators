@@ -296,7 +296,7 @@ var config = {
         "resources": [
           {
             "datasetId": "montreal-kpis",
-            "name": "trips",
+            "name": "trips_csv",
             "transform": [
               {
                 "type": "aggregate",
