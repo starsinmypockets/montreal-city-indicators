@@ -18,6 +18,5 @@
       "src": "/(.*)",
       "dest": "/index.js"
     }
-  ],
-  "alias": "frontend-v2-montreal-city-indicators.now.sh"
+  ]
 }
