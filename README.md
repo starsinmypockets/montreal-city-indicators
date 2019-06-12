@@ -9,6 +9,9 @@ The Montreal City Indicators site (this repository) consists of the following co
 * `API_URL` - Path to CKAN API v3 where data is hosted
 * `CMS_URL` - Path to wordpress installation for blog, static pages, etc @@TODO - document all static pages
 
+### now.json
+For zeit.co deployment
+
 ## Data dashboard
 ## CKAN frontend
 
