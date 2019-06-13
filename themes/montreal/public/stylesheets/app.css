@@ -10,8 +10,10 @@ body#montreal {background-color: #ffffff;}
 
 
 /**
- * HOME PAGE HERO
+ * HOME PAGE
  **/
+#montreal.home {background-color:#eee;}
+
 #montreal .module-content.box {
     background-color: transparent;
     margin: auto;
@@ -26,6 +28,20 @@ body#montreal {background-color: #ffffff;}
     position: absolute;
     z-index: -10;
     width: 100%;
+    top: 0;
+}
+
+#montreal .home-top {
+    height: 426px;
+}
+
+#montreal .hero-image-container {
+    width: 100%;
+    height: 426px;
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    z-index: -111;
 }
 
 #montreal.home .tint {
@@ -37,6 +53,17 @@ body#montreal {background-color: #ffffff;}
 }
 
 #montreal.home .home-page-banner {z-index: 100; height: 385px;}
+
+
+.featured-groups_item {float:left; height:10em; margin:0 2em;}
+.featured-groups_item img {height: 4em; margin-bottom:1em;}
+
+/**
+ * BLOG PAGE
+ **/
+#montreal.blog #page { margin-top: 5em;}
+#montreal footer.site-footer.bg-primary {background-color: rgb(9,31,47) !important}
+
 
 @font-face{font-family:Poppins;font-style:normal;font-weight:400;src:local("Poppins Regular"),local("Poppins-Regular"),url(../fonts/poppins-v6-latin-regular.woff2) format("woff2"),url(../fonts/poppins-v6-latin-regular.woff) format("woff")}@font-face{font-family:Poppins;font-style:italic;font-weight:400;src:local("Poppins Italic"),local("Poppins-Italic"),url(../fonts/poppins-v6-latin-italic.woff2) format("woff2"),url(../fonts/poppins-v6-latin-italic.woff) format("woff")}@font-face{font-family:Poppins;font-style:normal;font-weight:500;src:local("Poppins Medium"),local("Poppins-Medium"),url(../fonts/poppins-v6-latin-500.woff2) format("woff2"),url(../fonts/poppins-v6-latin-500.woff) format("woff")}@font-face{font-family:Poppins;font-style:normal;font-weight:600;src:local("Poppins SemiBold"),local("Poppins-SemiBold"),url(../fonts/poppins-v6-latin-600.woff2) format("woff2"),url(../fonts/poppins-v6-latin-600.woff) format("woff")}
 

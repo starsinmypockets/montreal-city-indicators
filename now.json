@@ -8,9 +8,10 @@
     }
   ],
   "env": {
-    "API_URL": "https://montreal.l3.ckan.io/api/3/action",
-    "CMS_URL": "edscms.home.blog",
-    "THEME": "montreal"
+    "API_URL": "http://donnees.ville.montreal.qc.ca/api/3/action/",
+    "WP_URL": "edscms.home.blog",
+    "THEME": "montreal",
+    "NODE_ENV": "staging"
   },
   "routes": [
     {
