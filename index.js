@@ -13,6 +13,7 @@ const i18n = require("i18n")
 const config = require('./config')
 const dmsRoutes = require('./routes/dms')
 const cmsRoutes = require('./routes/cms')
+console.log()
 
 module.exports.makeApp = function () {
   i18n.configure({
@@ -35,9 +36,13 @@ module.exports.makeApp = function () {
   const themeName = config.get('THEME')
   if (themeName) {
     app.use('/static', express.static(path.join(__dirname, `/${themeDir}/${themeName}/public`)))
+    require(`./${themeDir}/${themeName}/routes.js`)(app)
   }
   // Default assets
   app.use('/static', express.static(path.join(__dirname, '/public')))
+
+  // React APP
+  app.use('/static', express.static(path.join(__dirname, '/static')))
 
   app.use(
     bodyParser.urlencoded({

@@ -8,7 +8,7 @@ module.exports = {
       }
     },
     colors: {
-      primary: 'red',
+      primary: '#4E4E4F',
       secondary: '#EF4123',
       white: '#fff',
       'white-75': 'rgba(255,255,255,0.75)',
@@ -16,9 +16,7 @@ module.exports = {
         '100': '#F1F2F2',
         '500': '#6D6E71',
         '900': '#4E4E4F',
-        'sky': '#f4f6f8',
-      },
-      brand: 'red'
+      }
     },
     fontFamily: {
       'sans': ['Poppins', 'sans-serif']

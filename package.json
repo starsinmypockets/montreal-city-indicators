@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/datopian/frontend-v2#readme",
   "devDependencies": {
+    "autoprefixer": "^9.6.0",
     "ava": "^2.0.0",
     "browser-sync": "^2.26.5",
     "coveralls": "^3.0.3",
@@ -43,7 +44,7 @@
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.6.0",
     "supertest": "^4.0.2",
-    "tailwindcss": "^1.0.3"
+    "tailwindcss": "^1.0.4"
   },
   "dependencies": {
     "connect-flash": "^0.1.1",

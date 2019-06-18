@@ -4,6 +4,8 @@ const postcssPresetEnv = require('postcss-preset-env');
 const svgSprite = require('gulp-svg-sprite');
 const concat = require('gulp-concat');
 const nodemon = require('gulp-nodemon');
+const autoprefixer = require('autoprefixer');
+const tailwindcss = require('tailwindcss');
 
 // CSS
 gulp.task('css', function () {
@@ -15,10 +17,11 @@ gulp.task('css', function () {
             'nesting-rules': true
           }
         }),
-        require('tailwindcss'),
+        tailwindcss('./tailwind.config.js'),
+        require('autoprefixer'),
         require('cssnano')
       ]))
-    .pipe(gulp.dest('./opendk/public/stylesheets'));
+    .pipe(gulp.dest('./themes/montreal/public/stylesheets'));
 });
 
 

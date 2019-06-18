@@ -27,12 +27,12 @@ with open(archive) as file:
     if row[0] in kpis.keys():
       if row[0] not in data:
         data[row[0]] = []
-        data[row[0]].append(headers)
+        data[row[1]].append(headers)
       data[row[0]].append(row)
 
 # write each tracked kpi to its own csv file
 for kpid in kpis.keys():
-  filename = 'data/kpis/' + kpis[kpid][-1] + '.csv'
+  filename = 'data/kpis/' + kpis[kpid][0] + '.csv'
   with open(filename, "w", newline='') as f:
     writer = csv.writer(f)
     writer.writerows(data[kpid])

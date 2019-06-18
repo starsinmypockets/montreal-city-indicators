@@ -9,7 +9,7 @@
   ],
   "env": {
     "API_URL": "http://donnees.ville.montreal.qc.ca/api/3/action/",
-    "WP_URL": "edscms.home.blog",
+    "WP_URL": "montrealcity.home.blog",
     "THEME": "montreal",
     "NODE_ENV": "staging"
   },
